@@ -458,7 +458,9 @@ const Notepad = ({ mondayInstance = null }) => {
       borderRadius: 8,
       overflow: 'hidden',
       boxShadow: '0 6px 22px ' + t.shadow,
+      width: '100%',
       maxWidth: '100%',
+      boxSizing: 'border-box',
       display: 'flex',
       flexDirection: 'column',
     },
@@ -482,6 +484,8 @@ const Notepad = ({ mondayInstance = null }) => {
     },
     page: {
       overflow: 'auto',
+      width: '100%',
+      boxSizing: 'border-box',
       minHeight: 220,
       maxHeight: 520,
       background: t.appBg,
